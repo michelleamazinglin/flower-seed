@@ -2,12 +2,6 @@ body {
   background: #221F1D;
 }
 
-.title {
-  position: absolute;
-  top: 20px;
-  left: 1030px;
-}
-
 /* drop and drag */
 
 #USA {
@@ -172,7 +166,7 @@ body {
   height: 3px;
   border-radius: 50%;
   padding: 10px;
-  border: 1px solid ;
+  border: 1px solid white;
 }
 
 #GERMANY {
@@ -183,7 +177,7 @@ body {
   height: 3px;
   border-radius: 50%;
   padding: 10px;
-  border: 1px solid ;
+  border: 1px solid white;
 }
 
 #FRANCE {
@@ -194,7 +188,7 @@ body {
   height: 3px;
   border-radius: 50%;
   padding: 10px;
-  border: 1px solid ;
+  border: 1px solid white;
 }
 
 #ITALY {
@@ -268,74 +262,62 @@ body {
   width: 80%;
 }
 
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* dropdown menu */
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  left: 1100px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 /* map */
-.page {
-  position: relative;
-  text-align: center;
-  color: white;
-  height: 100vh;
-  width: 100vw;
-}
 
 .map {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-item: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.map > img {
   position: absolute;
-  top: 25px;
-  left: 50px;
+  top: 100px;
   width: 1000px;
   z-index: -10;
 }
 
+.circles {
+  position: relative;
+  top: 75px;
+  left: -550px;
+}
 
 
-/* seed position */
+/* nav */
+nav {
+    position: sticky;
+    top: 0;
+    height: 100px;
+	  width: 100%;
+    background: #fff;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-quiz {
+  text-decoration: none;
+  color: white;
+  background: lightblue;
+  position: relative;
+  border-radius: 5px;
+  padding: 15px;
+  left: -30px;
+  top: 32%;
+}
 
 .seed1 {
   position: absolute;
-  top: 130px;
-  left: 1150px;
   z-index: 1;
 }
 .seed {
   position: absolute;
-  top: 127px;
-  left: 1150px;
   z-index: 2;
   animation-name: rotate;
   animation-duration: 1s;
@@ -356,9 +338,124 @@ body {
  75% {transform: rotate(360deg);}
 }
 
-.page > p {
-  color: black;
-  position: absolute;
-  top: 0px;
-  left: 1100px;
+/* last page */
+
+.description {
+  margin: 50px;
+  color: white;
+}
+
+.mission {
+  margin-top: 60px;
+}
+
+.who {
+  margin-top: 60px;
+}
+
+.who > a {
+  text-decoration: underline;
+  color: white;
+}
+
+/* page layout */
+#screen1 {
+    height: 100vh;
+    display: flex;
+}
+
+#screen2 {
+    background: #84dcc6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#screen3 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+/* quiz */
+.wrapper {
+  width: 40%;
+  margin: 0 auto;
+  height: 50%;
+  padding-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-item: center;
+}
+
+#quiz {
+  background-color: #34495E;
+  padding-bottom: 60px;
+  width: 100%;
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#quiz > h1 {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 20px;
+}
+
+.questions {
+  font-size: 20px;
+  font-weight: bold;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  border-radius: 3%;
+  padding: 20px;
+}
+
+.answers div {
+  padding: 10px 0 0 0;
+  font-size: 16px;
+}
+
+.answers div:hover {
+  cursor: pointer;
+  color: #FBCB43;
+}
+
+.answers {
+  padding: 0px 0 10px 0px;
+}
+
+.answers div {
+  margin: 15px auto;
+}
+
+
+.checker {
+  display: inline-block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.correct, .false {
+  background-color: #109D59;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 4px;
+  float: left;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+.false {
+  background-color: #DC4437;
 }
