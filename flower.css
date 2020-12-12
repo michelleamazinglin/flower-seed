@@ -1,0 +1,338 @@
+body {
+  background: #221F1D;
+}
+
+.title {
+  position: absolute;
+  top: 20px;
+  left: 1030px;
+}
+
+/* drop and drag */
+
+#USA {
+  position: absolute;
+  top: 240px;
+  left: 265px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#CANADA {
+  position: absolute;
+  top: 165px;
+  left: 235px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#MEXICO {
+  position: absolute;
+  top: 307px;
+  left: 268px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 0px;
+  border: 1px solid white;
+}
+
+#BRAZIL {
+  position: absolute;
+  top: 400px;
+  left: 388px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid #221F1D;
+}
+
+#ARGENTINA {
+  position: absolute;
+  top: 480px;
+  left: 360px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid #221F1D;
+}
+
+#GREENLAND {
+  position: absolute;
+  top: 95px;
+  left: 415px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid #221F1D;
+}
+
+#CHINA {
+  position: absolute;
+  top: 260px;
+  left: 780px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#KOREA {
+  position: absolute;
+  top: 258px;
+  left: 835px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#JAPAN {
+  position: absolute;
+  top: 250px;
+  left: 865px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#RUSSIA {
+  position: absolute;
+  top: 150px;
+  left: 755px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#INDONESIA {
+  position: absolute;
+  top: 382px;
+  left: 810px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#AUSTRALIA {
+  position: absolute;
+  top: 445px;
+  left: 845px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#SOUTHAFRICA {
+  position: absolute;
+  top: 468px;
+  left: 577px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#ANTARCTICA {
+  position: absolute;
+  top: 660px;
+  left: 550px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid #221F1D;
+}
+
+#UK {
+  position: absolute;
+  top: 190px;
+  left: 510px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid ;
+}
+
+#GERMANY {
+  position: absolute;
+  top: 204px;
+  left: 544px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid ;
+}
+
+#FRANCE {
+  position: absolute;
+  top: 220px;
+  left: 525px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid ;
+}
+
+#ITALY {
+  position: absolute;
+  top: 238px;
+  left: 550px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#EGYPT {
+  position: absolute;
+  top: 286px;
+  left: 591px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#IRAN {
+  position: absolute;
+  top: 270px;
+  left: 653px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#INDIA {
+  position: absolute;
+  top: 300px;
+  left: 713px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+/* The Modal (background) */
+.usa, .china, .canada, .mexico, .brazil {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+/* dropdown menu */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  left: 1100px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* map */
+.page {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.map {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  width: 1000px;
+  z-index: -10;
+}
+
+
+
+/* seed position */
+
+.seed1 {
+  position: absolute;
+  top: 130px;
+  left: 1150px;
+  z-index: 1;
+}
+.seed {
+  position: absolute;
+  top: 130px;
+  left: 1150px;
+  z-index: 2;
+  
+}
+
+@keyframes move{
+  0%{top: 5px;}
+  25%{right: 5px;}
+  50%{top: -5px;}
+  100%{right: -5px}
+}
+
+.page > p {
+  color: black;
+  position: absolute;
+  top: 0px;
+  left: 1100px;
+}
