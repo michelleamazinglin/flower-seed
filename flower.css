@@ -242,7 +242,10 @@ body {
 }
 
 /* The Modal (background) */
-.usa, .china, .canada, .mexico, .brazil, .argentina {
+.usa, .china, .canada, .mexico, .brazil, .argentina, 
+.greenland, .korea, .japan, .russia, .indonesia, 
+.australia, .uk, .germany, .france, .italy, .egypt,
+.iran {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */

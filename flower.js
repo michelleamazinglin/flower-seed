@@ -30,6 +30,30 @@ const brazil = document.getElementById("BRAZIL");
 var brazilModal = document.getElementById("brazilModal");
 const argentina = document.getElementById("ARGENTINA");
 var argentinaModal = document.getElementById("argentinaModal");
+const greenland = document.getElementById("GREENLAND");
+var greenlandModal = document.getElementById("greenlandModal");
+const korea = document.getElementById("KOREA");
+var koreaModal = document.getElementById("koreaModal");
+const japan = document.getElementById("JAPAN");
+var japanModal = document.getElementById("japanModal");
+const russia = document.getElementById("RUSSIA");
+var russiaModal = document.getElementById("russiaModal");
+const indonesia = document.getElementById("INDONESIA");
+var indonesiaModal = document.getElementById("indonesiaModal");
+const australia = document.getElementById("AUSTRALIA");
+var australiaModal = document.getElementById("australiaModal");
+const uk = document.getElementById("UK");
+var ukModal = document.getElementById("ukModal");
+const germany = document.getElementById("GERMANY");
+var germanyModal = document.getElementById("germanyModal");
+const france = document.getElementById("FRANCE");
+var franceModal = document.getElementById("franceModal");
+const italy = document.getElementById("ITALY");
+var italyModal = document.getElementById("italyModal");
+const egypt = document.getElementById("EGYPT");
+var egyptModal = document.getElementById("egyptModal");
+const iran = document.getElementById("IRAN");
+var iranModal = document.getElementById("iranModal");
 
 usa.ondrop = function() {
   usaModal.style.display = "block";
@@ -54,15 +78,59 @@ brazil.ondrop = function() {
 argentina.ondrop = function() {
   argentinaModal.style.display = "block";
 }
+
+greenland.ondrop = function() {
+  greenlandModal.style.display = "block";
+}
+
+korea.ondrop = function() {
+  koreaModal.style.display = "block";
+}
+
+japan.ondrop = function() {
+  japanModal.style.display = "block";
+}
+
+russia.ondrop = function() {
+  russiaModal.style.display = "block";
+}
+
+indonesia.ondrop = function() {
+  indonesiaModal.style.display = "block";
+}
+
+australia.ondrop = function() {
+  australiaModal.style.display = "block";
+}
+
+uk.ondrop = function() {
+  ukModal.style.display = "block";
+}
+
+germany.ondrop = function() {
+  germanyModal.style.display = "block";
+}
+
+france.ondrop = function() {
+  franceModal.style.display = "block";
+}
+
+italy.ondrop = function() {
+  italyModal.style.display = "block";
+}
+
+egypt.ondrop = function() {
+  egyptModal.style.display = "block";
+}
+
+iran.ondrop = function() {
+  iranModal.style.display = "block";
+}
+
 }
 
 
 // Get the modal
-
-
-
-
-
 
 
 
@@ -80,7 +148,34 @@ window.onclick = function(event) {
     brazilModal.style.display = "none";
   } else if (event.target == argentinaModal) {
     argentinaModal.style.display = "none";
+  } else if (event.target == greenlandModal) {
+    greenlandModal.style.display = "none";
+  } else if (event.target == koreaModal) {
+    koreaModal.style.display = "none";
+  } else if (event.target == japanModal) {
+    japanModal.style.display = "none";
+  } else if (event.target == russiaModal) {
+    russiaModal.style.display = "none";
+  } else if (event.target == indonesiaModal) {
+    indonesiaModal.style.display = "none";
+  } else if (event.target == australiaModal) {
+    australiaModal.style.display = "none";
+  } else if (event.target == ukModal) {
+    ukModal.style.display = "none";
+  } else if (event.target == germanyModal) {
+    germanyModal.style.display = "none";
+  } else if (event.target == franceModal) {
+    franceModal.style.display = "none";
+  } else if (event.target == italyModal) {
+    italyModal.style.display = "none";
+  } else if (event.target == egyptModal) {
+    egyptModal.style.display = "none";
+  } else if (event.target == iranModal) {
+    iranModal.style.display = "none";
   } 
+
+  
+
 }
 
 
