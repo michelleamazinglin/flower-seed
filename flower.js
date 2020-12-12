@@ -28,6 +28,8 @@ const mexico = document.getElementById("MEXICO");
 var mexicoModal = document.getElementById("mexicoModal");
 const brazil = document.getElementById("BRAZIL");
 var brazilModal = document.getElementById("brazilModal");
+const argentina = document.getElementById("ARGENTINA");
+var argentinaModal = document.getElementById("argentinaModal");
 
 usa.ondrop = function() {
   usaModal.style.display = "block";
@@ -47,6 +49,10 @@ mexico.ondrop = function() {
 
 brazil.ondrop = function() {
   brazilModal.style.display = "block";
+}
+
+argentina.ondrop = function() {
+  argentinaModal.style.display = "block";
 }
 }
 
@@ -72,6 +78,8 @@ window.onclick = function(event) {
     mexicoModal.style.display = "none";
   } else if (event.target == brazilModal) {
     brazilModal.style.display = "none";
+  } else if (event.target == argentinaModal) {
+    argentinaModal.style.display = "none";
   } 
 }
 
