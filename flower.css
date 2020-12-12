@@ -245,7 +245,7 @@ body {
 .usa, .china, .canada, .mexico, .brazil, .argentina, 
 .greenland, .korea, .japan, .russia, .indonesia, 
 .australia, .uk, .germany, .france, .italy, .egypt,
-.iran {
+.iran, .southafrica, .india, .antarctica {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */

@@ -54,6 +54,12 @@ const egypt = document.getElementById("EGYPT");
 var egyptModal = document.getElementById("egyptModal");
 const iran = document.getElementById("IRAN");
 var iranModal = document.getElementById("iranModal");
+const southafrica = document.getElementById("SOUTHAFRICA");
+var southafricaModal = document.getElementById("southafricaModal");
+const india = document.getElementById("INDIA");
+var indiaModal = document.getElementById("indiaModal");
+const antarctica = document.getElementById("ANTARCTICA");
+var antarcticaModal = document.getElementById("antarcticaModal");
 
 usa.ondrop = function() {
   usaModal.style.display = "block";
@@ -127,6 +133,18 @@ iran.ondrop = function() {
   iranModal.style.display = "block";
 }
 
+southafrica.ondrop = function() {
+  southafricaModal.style.display = "block";
+}
+
+india.ondrop = function() {
+  indiaModal.style.display = "block";
+}
+
+antarctica.ondrop = function() {
+  antarcticaModal.style.display = "block";
+}
+
 }
 
 
@@ -172,9 +190,14 @@ window.onclick = function(event) {
     egyptModal.style.display = "none";
   } else if (event.target == iranModal) {
     iranModal.style.display = "none";
-  } 
+  } else if (event.target == southafricaModal) {
+    southafricaModal.style.display = "none";
+  } else if (event.target == indiaModal) {
+    indiaModal.style.display = "none";
+  } else {
+    antarcticaModal.style.display = "none";
+  }
 
-  
 
 }
 
