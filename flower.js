@@ -222,22 +222,23 @@ window.onclick = function(event) {
 window.onload = function () {
   
   var questionArea = document.getElementsByClassName('questions')[0],
-      answerArea   = document.getElementsByClassName('answers')[0],
-      checker      = document.getElementsByClassName('checker')[0],
+      answer   = document.getElementsByClassName('answers')[0],
+      rightWrong   = document.getElementsByClassName('right-wrong')[0],
       current      = 0,
   
      // An object that holds all the questions + possible answers.
      // In the array --> last digit gives the right answer position
-      allQuestions = {
-        'What is Canada\'s national animal?' : ['Beaver', 'Duck', 'Horse', 0],
+       allQuestions = {
+        'Which area\'s plants look like plants but are not plants?' : ['Australia', 'Antarctica', 'Germany', 1],
         
-        'What is converted into alcohol during brewing?' : ['Grain', 'Sugar' , 'Water', 1],
+        'Two countries have the same national flowers. Which two countries are they?' : ['Canada & Russia', 'Egypt & Mexico' , 'USA & UK', 2],
         
-        'In what year was Prince Andrew born? ' : ['1955', '1960', '1970', 1]
+        'Which country\'s flower used to grow as a weed in cornfileds? ' : ['Germany', 'Italy', 'Iran', 0],
+        
       };
       
   function loadQuestion(curr) {
-  // This function loads all the question into the questionArea
+  // This function loads all the question into the question
   // It grabs the current question based on the 'current'-variable
   
     var question = Object.keys(allQuestions)[curr];
@@ -253,7 +254,7 @@ window.onload = function () {
   
     var answers = allQuestions[Object.keys(allQuestions)[curr]];
     
-    answerArea.innerHTML = '';
+    answer.innerHTML = '';
     
     for (var i = 0; i < answers.length -1; i += 1) {
       var createDiv = document.createElement('div'),
@@ -263,7 +264,7 @@ window.onload = function () {
       createDiv.addEventListener("click", checkAnswer(i, answers));
       
       
-      answerArea.appendChild(createDiv);
+      answer.appendChild(createDiv);
     }
   }
   
@@ -271,16 +272,16 @@ window.onload = function () {
     // This is the function that will run, when clicked on one of the answers
     // Check if givenAnswer is sams as the correct one
     // After this, check if it's the last question:
-    // If it is: empty the answerArea and let them know it's done.
+    // If it is: empty the answer and let them know it's done.
     
     return function () {
       var givenAnswer = i,
           correctAnswer = arr[arr.length-1];
       
       if (givenAnswer === correctAnswer) {
-        addChecker(true);             
+        addrightWrong(true);             
       } else {
-        addChecker(false);                        
+        addrightWrong(false);                        
       }
       
       if (current < Object.keys(allQuestions).length -1) {
@@ -289,32 +290,31 @@ window.onload = function () {
         loadQuestion(current);
         loadAnswers(current);
       } else {
-        questionArea.innerHTML = 'Done';
-        answerArea.innerHTML = '';
+        questionArea.innerHTML = 'Well Done';
+        answer.innerHTML = '';
       }
                               
     };
   }
   
-  function addChecker(bool) {
+  function addrightWrong(input) {
   // This function adds a div element to the page
   // Used to see if it was correct or false
   
     var createDiv = document.createElement('div'),
-        txt       = document.createTextNode(current + 1);
+        txt = document.createTextNode(current + 1);
     
     createDiv.appendChild(txt);
     
-    if (bool) {
+    if (input) {
       
       createDiv.className += 'correct';
-      checker.appendChild(createDiv);
+      rightWrong.appendChild(createDiv);
     } else {
       createDiv.className += 'false';
-      checker.appendChild(createDiv);
+      rightWrong.appendChild(createDiv);
     }
   }
-  
   
   // Start the quiz right away
   loadQuestion(current);

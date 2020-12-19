@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 body {
   background: #221F1D;
+  font-family: 'Rubik', sans-serif;
+
 }
 
 /* drop and drag */
@@ -149,7 +153,7 @@ body {
 
 #ANTARCTICA {
   position: absolute;
-  top: 660px;
+  top: 658px;
   left: 550px;
   width: 20px;
   height: 20px;
@@ -259,8 +263,36 @@ body {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 35%;
+  height: 30%;
+  position: relative;
+  top: 15%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
 }
+
+.modal-content > img {
+  border-radius: 10px;
+  width: 45%;
+  margin: 3%;
+}
+
+.flowers {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  margin: 3%;
+}
+
+.flowers > p {
+   overflow: auto;
+}
+
+.flowers > h3 {
+  margin: 2px;
+}
+
 
 
 /* map */
@@ -294,7 +326,7 @@ nav {
     top: 0;
     height: 100px;
 	  width: 100%;
-    background: #fff;
+    background: #262A34;
     bottom: 0;
     display: flex;
     justify-content: space-between;
@@ -303,13 +335,23 @@ nav {
 
 .nav-quiz {
   text-decoration: none;
-  color: white;
-  background: lightblue;
+  color: #493D26;
+  background: #F2BB66;
   position: relative;
   border-radius: 5px;
   padding: 15px;
   left: -30px;
   top: 32%;
+}
+
+.nav-quiz:hover {
+  color: white;
+  background: #F7B95C;
+}
+
+.seeds {
+  position: relative;
+  left: -50px;
 }
 
 .seed1 {
@@ -365,7 +407,7 @@ nav {
 }
 
 #screen2 {
-    background: #84dcc6;
+    background: #2B3856;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -385,22 +427,22 @@ nav {
 
 
 /* quiz */
-.wrapper {
-  width: 40%;
+.quiz-tab {
+  width: 35%;
   margin: 0 auto;
   height: 50%;
   padding-top: 0px;
   display: flex;
   justify-content: center;
-  align-item: center;
+  align-items: center;
 }
 
 #quiz {
-  background-color: #34495E;
+  background-color: #E8A317;
   padding-bottom: 60px;
   width: 100%;
   border-radius: 5%;
-  color: white;
+  color: #493D26;
   text-align: center;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
@@ -414,8 +456,8 @@ nav {
 .questions {
   font-size: 20px;
   font-weight: bold;
-  border-top: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #493D26;
+  border-bottom: 1px solid #493D26;
   border-radius: 3%;
   padding: 20px;
 }
@@ -427,7 +469,7 @@ nav {
 
 .answers div:hover {
   cursor: pointer;
-  color: #FBCB43;
+  color: #EBF4FA;
 }
 
 .answers {
@@ -439,14 +481,14 @@ nav {
 }
 
 
-.checker {
+.right-wrong {
   display: inline-block;
   width: 200px;
   margin: 0 auto;
 }
 
 .correct, .false {
-  background-color: #109D59;
+  background-color: #6CBB3C;
   width: 60px;
   height: 30px;
   line-height: 30px;
@@ -457,5 +499,5 @@ nav {
 }
 
 .false {
-  background-color: #DC4437;
+  background-color: #E42217;
 }
