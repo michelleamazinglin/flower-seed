@@ -2,8 +2,8 @@
 ***
 
 **TEAM MEMBERS**
->* Michelle Lin (ml4567)
->* Tianyi Zhang (tz2492)
+>* Michelle Lin
+>* Tianyi Zhang
 
 **PROBLEM**
 > environment issues are big topics today. we want to bring awareness not only to adults but also childrens. All the environmental articals and news online only targets adults attension. We want to come up with a solution that will also make next generation think environmental protection is very important.
